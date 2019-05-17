@@ -60,7 +60,7 @@
 
       <div class="logo">
         <!-- Uncomment below if you prefer to use an image logo -->
-        <h1 class="text-light"><a href="#intro" class="scrollto"><span>Бюро перекладів</span></a></h1>
+        <h1 class="text-light"><a href="#intro" class="scrollto"><span>Бюро <br /> перекладів</span></a></h1>
         <!-- <a href="#header" class="scrollto"><img src="img/logo.png" alt="" class="img-fluid"></a> -->
       </div>
 
@@ -1058,8 +1058,8 @@
 
                 </div> -->
 
-                <div class="col-sm-6">
-                  <div class="footer-links">
+                <div class="col-sm-12">
+                  <!-- <div class="footer-links">
                     <h4>Useful Links</h4>
                     <ul>
                       <li><a href="#">Home</a></li>
@@ -1068,16 +1068,16 @@
                       <li><a href="#">Terms of service</a></li>
                       <li><a href="#">Privacy policy</a></li>
                     </ul>
-                  </div>
+                  </div> -->
 
                   <div class="footer-links">
-                    <h4>Contact Us</h4>
+                    <h4>Зв'яжіться з нами</h4>
                     <p>
-                      A108 Adam Street <br>
-                      New York, NY 535022<br>
-                      United States <br>
-                      <strong>Phone:</strong> +1 5589 55488 55<br>
-                      <strong>Email:</strong> info@example.com<br>
+                        м. Івано-Франківськ, <br>
+                        вул. Івана Франка, 39/1а <br>
+                      <strong>Мобільний телефон:</strong> +38 095 897 41 29 (Viber, WhatsApp)<br>
+                      <strong>Стаціонарний телефон:</strong> (0342) 72 39 39<br>
+                      <strong>Електронна адреса:</strong> translator.if@gmail.com<br>
                     </p>
                   </div>
 
@@ -1095,6 +1095,25 @@
           </div>
 
           <div class="col-lg-6">
+            <div style="min-height:500px;" id="map">
+                <script>
+                    function myMap() {
+                    var mapProp= {
+                      center:new google.maps.LatLng(48.924419, 24.717525),
+                      zoom:16,
+                    };
+                    var map = new google.maps.Map(document.getElementById("map"),mapProp);
+
+                    var marker = new google.maps.Marker({
+                      position: new google.maps.LatLng(48.924419, 24.717525),
+                      animation:google.maps.Animation.BOUNCE,
+                      map: map,
+                    });
+                    }
+                    </script>
+                    
+                    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAG6wNs9DRXJApjZRhe4PS9xKgtz8XUfj0&callback=myMap"></script>
+            </div>
 
             <!-- <div class="form">
               
@@ -1134,20 +1153,7 @@
       </div>
     </div>
 
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong>Rapid</strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        <!--
-          All the links in the footer should remain intact.
-          You can delete the links only if you purchased the pro version.
-          Licensing information: https://bootstrapmade.com/license/
-          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Rapid
-        -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-    </div>
+   
   </footer><!-- #footer -->
 
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
