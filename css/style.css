@@ -520,7 +520,7 @@ h6 {
 --------------------------------*/
 
 .section-bg {
-  background: #f5f8fd;
+  background: rgba(131, 10, 60, 0.08);
 }
 
 /* About Us Section
@@ -647,7 +647,7 @@ h6 {
   margin-bottom: 15px;
   font-size: 18px;
   background: #830a3c;
-  color: #d8cd24;
+  color: #fff;
   display: inline-block;
   text-align: center;
   line-height: 40px;
@@ -942,7 +942,7 @@ h6 {
   font-size: 20px;
   font-weight: bold;
   margin: 10px 0 5px 0;
-  color: #111;
+  /* color: #111; */
   margin-left: 140px;
 }
 
@@ -974,7 +974,7 @@ h6 {
 }
 
 #testimonials .owl-dot.active {
-  background-color: #1bb1dc;
+  background-color: #830a3c;
 }
 
 /* Team Section
@@ -1101,6 +1101,10 @@ h6 {
 
 #pricing {
   padding: 80px 0;
+}
+
+#pricing  .section-header p {
+  font-weight: bold;
 }
 
 #pricing .row [class *='col-'] {
